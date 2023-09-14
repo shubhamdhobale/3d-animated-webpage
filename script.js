@@ -40,3 +40,30 @@ gsap.to("#page2>h1>span", {
     stagger: .2,
     color: `#fff`
 })
+
+
+
+
+gsap.to(".page3-cir", {
+    scrollTrigger: {
+        trigger: `.page3-cir`,
+        start: `top center`,
+        end: `bottom top`,
+        scroller: `#main`,
+        scrub: .5
+    },
+    scale: 1.5
+})
+
+
+
+gsap.to(".page3-cir-inner", {
+    scrollTrigger: {
+        trigger: `.page3-cir-inner`,
+        start: `top center`,
+        end: `bottom top`,
+        scroller: `#main`,
+        scrub: .5
+    },
+    backgroundColor: `#0000`,
+})
